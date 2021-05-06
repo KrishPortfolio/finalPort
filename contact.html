@@ -105,18 +105,17 @@
           <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xaylqrgb" method="post">
           <div class="row">
   <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
     <div class="col-md-6 form-group">
     <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
     </div>
     <div class="col-md-6 form-group mt-3 mt-md-0">
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
     </div>
     </div>
     <div class="form-group mt-3">
-    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-    </div>
     <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </div>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
   </fieldset>
   <input class="text-center" type="submit" value="Submit">
 </form>
